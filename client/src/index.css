@@ -1,0 +1,168 @@
+/* === GOOGLE FONT === */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* === ROOT COLORS === */
+:root {
+  --bs-primary: #FF6F00;
+  --bs-primary-hover: #E65100;
+  --bs-body-bg: #FFFFFF;
+  --bs-body-color: #000000;
+  --bs-card-bg: #FFFFFF;
+}
+
+/* === BASE === */
+body, #root {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+  min-height: 100vh;
+}
+
+/* === NAVBAR === */
+.navbar {
+  background: var(--bs-body-bg);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.navbar-brand, .nav-link {
+  color: var(--bs-body-color);
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  color: var(--bs-primary);
+}
+
+/* === CARDS === */
+.card {
+  background: var(--bs-card-bg);
+  border: none;
+  border-radius: 24px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+  padding: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+}
+
+/* === BUTTONS === */
+.btn-primary {
+  background-color: var(--bs-primary);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 50px;
+  padding: 0.75rem 1.5rem;
+  box-shadow: 0 4px 12px rgba(255, 111, 0, 0.4);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--bs-primary-hover);
+  box-shadow: 0 6px 16px rgba(230, 81, 0, 0.5);
+}
+
+.btn-circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bs-primary);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(255, 111, 0, 0.4);
+  border: none;
+}
+
+.btn-circle:hover {
+  background-color: var(--bs-primary-hover);
+  box-shadow: 0 6px 16px rgba(230, 81, 0, 0.5);
+}
+
+/* === HEADINGS === */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: var(--bs-body-color);
+}
+
+/* === LINKS === */
+a {
+  color: var(--bs-body-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  color: var(--bs-primary);
+}
+
+/* === FOOTER === */
+.footer {
+  text-align: center;
+  padding: 2rem;
+  color: var(--bs-body-color);
+}
+
+/* === CAROUSEL === */
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  padding: 1rem 2rem;
+}
+
+.carousel-caption h2 {
+  color: #fff;
+  font-weight: 700;
+}
+
+.carousel-caption p {
+  color: #f1f1f1;
+  font-weight: 500;
+}
+
+/* === ADMIN SIDEBAR === */
+#wrapper {
+  overflow-x: hidden;
+}
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  transition: margin 0.25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+  body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}

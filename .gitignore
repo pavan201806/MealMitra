@@ -1,0 +1,22 @@
+# Root-level ignores
+.vscode/
+uploads/
+logs/
+*.log
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Node / Next
+node_modules/
+.next/
+
+# Environment files
+.env
+.env.local
+.env.*
+
+# OS / misc
+.DS_Store
+
