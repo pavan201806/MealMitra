@@ -1,7 +1,4 @@
 import { Link } from "react-router-dom";
-// ✅ Make sure path is correct!
-import Menubar from "../../components/admin/Menubar";
-import Sidebar from "../../components/admin/Sidebar";
 
 function Home() {
   const categories = [
@@ -34,35 +31,23 @@ function Home() {
   const actions = [
     {
       label: "Add Food Item",
-      path: "/addfood",
+      path: "/admin/add-food",
       icon: "bi-plus-circle",
     },
     {
       label: "List Food Items",
-      path: "/listfood",
+      path: "/admin/list-food",
       icon: "bi-list-ul",
     },
     {
       label: "View Orders",
-      path: "/adminorder",
+      path: "/admin/orders",
       icon: "bi-receipt",
     },
   ];
 
   return (
-    <div className="d-flex" id="wrapper" style={{ minHeight: "100vh" }}>
-      <Sidebar />
-
-      <div
-        id="page-content-wrapper"
-        className="w-100"
-        style={{
-          background: "#fafafa",
-        }}
-      >
-        <Menubar />
-
-        <div className="container py-5">
+    <div className="container py-5">
           {/* Hero */}
           <div
             className="p-5 rounded-4 mb-5"
@@ -136,8 +121,6 @@ function Home() {
             </div>
           </div>
         </div>
-      </div>
-    </div>
   );
 }
 

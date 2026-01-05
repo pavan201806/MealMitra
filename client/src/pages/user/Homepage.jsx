@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Navbar from "../../components/user/Navbar";
 import Carousel from "../../components/user/Carousel";
 import api from "../../services/api";
 import { toast } from "react-toastify";
@@ -31,10 +30,7 @@ function Homepage() {
   };
 
   return (
-    <>
-      <Navbar />
-
-      <main>
+    <main>
         {/* Hero Carousel */}
         <section>
           <Carousel />
@@ -96,7 +92,6 @@ function Homepage() {
           )}
         </section>
       </main>
-    </>
   );
 }
 

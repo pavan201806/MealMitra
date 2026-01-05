@@ -42,7 +42,7 @@ function Menubar() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mt-2 mt-lg-0 align-items-center">
               <li className="nav-item active">
-                <Link className="nav-link" to="/home">
+                <Link className="nav-link" to="/admin/dashboard">
                   Dashboard
                 </Link>
               </li>

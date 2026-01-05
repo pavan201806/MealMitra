@@ -27,7 +27,7 @@ function Register() {
       toast.success("✅ Registered successfully! Please login.");
 
       setTimeout(() => {
-        navigate("/log");
+        navigate("/login");
       }, 1500);
     } catch (err) {
       toast.error(err.response?.data || "❌ Registration failed");
@@ -92,7 +92,7 @@ function Register() {
           <button className="btn btn-success w-100">Register</button>
 
           <p className="text-center mt-3">
-            Already have an account? <Link to="/log">Login</Link>
+            Already have an account? <Link to="/login">Login</Link>
           </p>
         </form>
       </div>

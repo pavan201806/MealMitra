@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { useCart } from "../../contexts/CartContext";
 import api from "../../services/api";
-import Navbar from "../../components/user/Navbar";
 
 export default function CheckoutPage() {
   const navigate = useNavigate();
@@ -21,7 +20,7 @@ export default function CheckoutPage() {
   useEffect(() => {
     if (!userId) {
       toast.info("Please login to continue");
-      navigate("/log");
+      navigate("/login");
       return;
     }
 
@@ -108,21 +107,16 @@ export default function CheckoutPage() {
   // ------------------------------------
   if (loading) {
     return (
-      <>
-        <Navbar />
-        <div className="container my-5 text-center">
-          <div className="spinner-border" role="status">
-            <span className="visually-hidden">Loading...</span>
-          </div>
+      <div className="container my-5 text-center">
+        <div className="spinner-border" role="status">
+          <span className="visually-hidden">Loading...</span>
         </div>
-      </>
+      </div>
     );
   }
 
   return (
-    <>
-      <Navbar />
-      <div className="container my-5">
+    <div className="container my-5">
         <h2 className="mb-4 fw-bold">Checkout</h2>
 
       <div className="row g-4">
@@ -202,6 +196,5 @@ export default function CheckoutPage() {
         </div>
       </div>
       </div>
-    </>
   );
 }

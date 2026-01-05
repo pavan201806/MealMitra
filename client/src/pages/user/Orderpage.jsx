@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import api from "../../services/api";
-import Navbar from "../../components/user/Navbar";
 
 function Orderpage() {
   const [orders, setOrders] = useState([]);
@@ -14,7 +13,7 @@ function Orderpage() {
   useEffect(() => {
     if (!userId) {
       toast.info("Please login to view orders");
-      navigate("/log");
+      navigate("/login");
       return;
     }
     fetchOrders();
@@ -35,21 +34,16 @@ function Orderpage() {
 
   if (loading) {
     return (
-      <>
-        <Navbar />
-        <div className="container my-5 text-center">
-          <div className="spinner-border" role="status">
-            <span className="visually-hidden">Loading...</span>
-          </div>
+      <div className="container my-5 text-center">
+        <div className="spinner-border" role="status">
+          <span className="visually-hidden">Loading...</span>
         </div>
-      </>
+      </div>
     );
   }
 
   return (
-    <>
-      <Navbar />
-      <div className="container my-5">
+    <div className="container my-5">
         <div className="d-flex justify-content-between align-items-center mb-4">
           <h2 className="fw-bold">Your Orders</h2>
           <button className="btn btn-primary" onClick={() => navigate("/")}>
@@ -120,7 +114,6 @@ function Orderpage() {
           </div>
         )}
       </div>
-    </>
   );
 }
 

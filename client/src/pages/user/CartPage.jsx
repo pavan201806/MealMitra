@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { useCart } from "../../contexts/CartContext";
 import api from "../../services/api";
-import Navbar from "../../components/user/Navbar";
 
 function CartPage() {
   const [cart, setCart] = useState(null);
@@ -20,7 +19,7 @@ function CartPage() {
   useEffect(() => {
     if (!userId) {
       toast.info("Please login to view cart");
-      navigate("/log");
+      navigate("/login");
       return;
     }
 
@@ -100,21 +99,16 @@ function CartPage() {
   // -----------------------------------
   if (loading) {
     return (
-      <>
-        <Navbar />
-        <div className="container mt-5 text-center">
-          <div className="spinner-border" role="status">
-            <span className="visually-hidden">Loading...</span>
-          </div>
+      <div className="container mt-5 text-center">
+        <div className="spinner-border" role="status">
+          <span className="visually-hidden">Loading...</span>
         </div>
-      </>
+      </div>
     );
   }
 
   return (
-    <>
-      <Navbar />
-      <div className="container mt-5">
+    <div className="container mt-5">
         <h2 className="mb-4">Your Cart</h2>
 
       <div className="row">
@@ -180,7 +174,6 @@ function CartPage() {
         </div>
       </div>
       </div>
-    </>
   );
 }
 

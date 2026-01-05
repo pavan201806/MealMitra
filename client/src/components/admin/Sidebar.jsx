@@ -16,9 +16,10 @@ function Sidebar(){
                 </div>
 
                 <div className="list-group list-group-flush">
-                <Link className="list-group-item p-3" to="/addfood">Add Food</Link>
-                <Link className="list-group-item p-3" to="/listfood">List Food</Link>
-                <Link className="list-group-item p-3" to="/adminorder">Orders</Link>
+                <Link className="list-group-item p-3" to="/admin/add-food">Add Food</Link>
+                <Link className="list-group-item p-3" to="/admin/list-food">List Food</Link>
+                <Link className="list-group-item p-3" to="/admin/orders">Orders</Link>
+                <Link className="list-group-item p-3" to="/admin/dashboard">Dashboard</Link>
                 </div>
             </div>
         </>

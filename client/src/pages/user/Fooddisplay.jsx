@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useCart } from "../../contexts/CartContext";
 import { toast } from "react-toastify";
-import Navbar from "../../components/user/Navbar";
 import api from "../../services/api";
 
 function Fooddisplay() {
@@ -29,7 +28,7 @@ function Fooddisplay() {
 
     if (!role || role === "admin") {
       toast.info("⚠️ Please sign in as a customer to add items to your cart.", {
-        onClose: () => navigate("/log"),
+        onClose: () => navigate("/login"),
       });
       return;
     }
@@ -62,9 +61,7 @@ function Fooddisplay() {
   );
 
   return (
-    
     <div className="container py-4">
-      <Navbar/>
       {/* ✅ Heading */}
       <h2 className="text-center mb-4">Our Delicious Menu</h2>
 

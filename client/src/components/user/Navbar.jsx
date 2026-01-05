@@ -74,8 +74,8 @@ function Navbar() {
           {/* ADMIN LINKS */}
           {role === "admin" && (
             <>
-              <Link className="nav-link" to="/admin">Dashboard</Link>
-              <Link className="nav-link" to="/adminorder">Orders</Link>
+              <Link className="nav-link" to="/admin/dashboard">Dashboard</Link>
+              <Link className="nav-link" to="/admin/orders">Orders</Link>
             </>
           )}
 
@@ -83,6 +83,7 @@ function Navbar() {
           {role && role !== "admin" && (
             <>
               <Link className="nav-link" to="/orders">Orders</Link>
+              <Link className="nav-link" to="/profile">Profile</Link>
 
               {userId && (
                 <Link to="/cart" className="position-relative">
@@ -108,7 +109,7 @@ function Navbar() {
           ) : (
             <button
               className="btn btn-outline-primary btn-sm"
-              onClick={() => navigate("/log")}
+              onClick={() => navigate("/login")}
             >
               Sign In
             </button>

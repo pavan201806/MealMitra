@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
 
-import Sidebar from "../../components/admin/Sidebar";
-import Menubar from "../../components/admin/Menubar";
 import { toast } from "react-toastify"; // ✅ Import toast
 import api from "../../services/api";
 
@@ -71,14 +69,8 @@ function ListFood() {
   };
 
   return (
-    <div className="d-flex" id="wrapper">
-      <Sidebar />
-
-      <div id="page-content-wrapper">
-        <Menubar />
-
-        <div className="container-fluid">
-          <div className="container mt-4">
+    <div className="container-fluid">
+      <div className="container mt-4">
             {data.length === 0 ? (
               <p>No menu items available.</p>
             ) : (
@@ -187,8 +179,6 @@ function ListFood() {
             )}
           </div>
         </div>
-      </div>
-    </div>
   );
 }
 

@@ -1,10 +1,14 @@
-package com.example.Vibe;
+package com.example.demo.controller;
+
+import com.example.demo.DTOs.RouteRequest;
+import com.example.demo.DTOs.RouteResponse;
+import com.example.demo.service.GeoService;
 
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin
+@CrossOrigin(origins = "*") // allow frontend access
 public class RouteController {
 
     private final GeoService geo;
@@ -27,9 +31,8 @@ public class RouteController {
         res.endLat = e[0];
         res.endLng = e[1];
         res.distance = Math.round(dist * 100.0) / 100.0;
-        res.eta = (int)(dist / 0.5); // avg 30km/h
+        res.eta = (int) (dist / 0.5); // avg speed ~30 km/h
 
         return res;
     }
 }
-

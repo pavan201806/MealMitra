@@ -1,8 +1,6 @@
 import { useState } from "react";
 
 
-import Sidebar from "../../components/admin/Sidebar";
-import Menubar from "../../components/admin/Menubar";
 import { toast } from "react-toastify"; // ✅ Import toast
 import "bootstrap/dist/css/bootstrap.min.css";
 import api from "../../services/api";
@@ -78,13 +76,7 @@ function AddFood() {
   };
 
   return (
-    <div className="d-flex" id="wrapper">
-      <Sidebar />
-
-      <div id="page-content-wrapper" className="w-100">
-        <Menubar />
-
-        <div className="container mt-4">
+    <div className="container mt-4">
           <h2 className="mb-4">Add New Food Item</h2>
 
           <form onSubmit={submit} encType="multipart/form-data">
@@ -188,8 +180,6 @@ function AddFood() {
             </button>
           </form>
         </div>
-      </div>
-    </div>
   );
 }
 

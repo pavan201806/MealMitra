@@ -78,7 +78,7 @@ function Login() {
           <button className="btn btn-primary w-100">Login</button>
 
           <p className="text-center mt-3">
-            New here? <Link to="/reg">Register</Link>
+            New here? <Link to="/register">Register</Link>
           </p>
         </form>
       </div>
