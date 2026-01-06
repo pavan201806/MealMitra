@@ -1,0 +1,15 @@
+flask
+flask-cors
+sentence-transformers
+faiss-cpu
+pymupdf
+numpy
+langchain
+langchain-community
+langchain-openai
+langgraph
+python-dotenv
+openai
+pdf2image
+pytesseract
+pillow

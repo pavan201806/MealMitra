@@ -1,0 +1,13 @@
+============================================================
+FAISS INDEX VERIFICATION
+============================================================
+
+Index path: D:\VIBEAI\RAG\backend\faiss_index
+
+Total documents in index: 47
+
+PDF documents: 0
+JSON documents: 38
+TXT documents: 9
+
+ERROR: NO PDF DOCUMENTS IN INDEX!

@@ -1,0 +1,7 @@
+Agriculture AI
+Artificial Intelligence is transforming agriculture by improving productivity and reducing risk.
+AI systems can analyze soil nutrients, weather conditions, and crop images to support farmers in decision-making.
+
+Crop disease detection systems identify plant diseases using leaf images.
+Irrigation optimization systems suggest when and how much water should be supplied to crops.
+These AI tools help farmers increase yield and reduce resource wastage.

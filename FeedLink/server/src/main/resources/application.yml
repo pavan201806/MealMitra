@@ -1,0 +1,48 @@
+server:
+  port: 5000
+
+spring:
+  application:
+    name: mealmitra-server
+  
+  datasource:
+    url: jdbc:h2:file:./data/mealmitra
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: 
+  
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+        format_sql: true
+  
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+    time-zone: UTC
+
+# Application specific configuration
+app:
+  jwt:
+    secret: ${JWT_SECRET:feedilink_secret_key_change_in_production}
+    expiration: 604800000  # 7 days in milliseconds
+  
+  ai-service:
+    url: ${AI_SERVICE_URL:http://localhost:8000}
+    timeout: 60000  # 60 seconds
+
+# Logging
+logging:
+  level:
+    com.mealmitra: DEBUG
+    org.springframework.security: DEBUG
+    org.hibernate.SQL: DEBUG

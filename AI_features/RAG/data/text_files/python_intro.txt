@@ -1,0 +1,15 @@
+Intro of Python
+Python is a high-level, interpreted programming language known for its simplicity and readability.
+It supports multiple programming paradigms, including procedural, object-oriented, and functional programming.
+
+Python is widely used in web development, data science, artificial intelligence, and automation.
+Popular frameworks such as Flask and Django are used to build web applications.
+Libraries like NumPy, Pandas, and Matplotlib are commonly used for data analysis and visualization.
+
+In machine learning, Python provides libraries such as scikit-learn, TensorFlow, and PyTorch.
+These libraries help developers build, train, and evaluate machine learning models efficiently.
+
+Python is also widely used in natural language processing.
+Tools like NLTK, spaCy, and Hugging Face Transformers enable text processing and language understanding tasks.
+
+Because of its large ecosystem and active community, Python is one of the most preferred languages for beginners and professionals.

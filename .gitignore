@@ -20,3 +20,13 @@ node_modules/
 # OS / misc
 .DS_Store
 
+# Jupyter notebooks (contain experiments / secrets)
+AI_features/RAG/**/*.ipynb
+
+# RAG local data & indexes
+AI_features/RAG/data/
+AI_features/RAG/.venv/
+
+# Embedded DB (must never be committed)
+server/data/
+*.mv.db

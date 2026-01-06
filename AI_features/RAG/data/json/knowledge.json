@@ -1,0 +1,157 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi", "Hello", "Hey", "Hi there", "Hello bot", "Hey buddy", "Hi assistant",
+        "Hola", "Good morning", "Good evening", "Good afternoon", "Good night",
+        "Anyone here?", "Are you online?", "Can you talk?", "Let's chat", "What's up?",
+        "Is anyone there?"
+      ],
+      "responses": [
+        "Hello! I am the FEEDILINK assistant. How can I help you today?",
+        "Hey 👋 I'm here — what’s up?",
+        "Hi! Ask me anything 😊",
+        "Welcome! I’m ready to assist you!",
+        "Hello there! How may I help?"
+      ]
+    },
+    {
+      "tag": "smalltalk",
+      "patterns": [
+        "How are you?", "How's it going?", "What's going on?", "Who are you?",
+        "Why are you here?", "Tell me about yourself", "Do you sleep?",
+        "What are you doing?", "You are smart", "You're cool", "You are funny",
+        "What's your job?", "What do you do?"
+      ],
+      "responses": [
+        "I'm doing great and ready to help!",
+        "I'm here to make your life easy — ask me anything 😄",
+        "Haha I don't sleep — I work 24/7!",
+        "I'm a virtual assistant built to answer your questions."
+      ]
+    },
+    {
+      "tag": "help_me",
+      "patterns": [
+        "Help me", "Can you help?", "Assist me", "I need support",
+        "Help pls", "Do something", "I'm stuck", "I need information",
+        "Explain something", "I need guidance"
+      ],
+      "responses": [
+        "Sure — tell me what you need 😊",
+        "I'm here to help — what do you want to know?",
+        "Go ahead… I’m listening!"
+      ]
+    },
+    {
+      "tag": "chatbot_accuracy",
+      "patterns": [
+        "How does the chatbot work?", "Is the chatbot accurate?",
+        "What is RAG?", "Are you accurate?", "Do you give correct answers?",
+        "Where do you get answers from?", "Do you hallucinate?"
+      ],
+      "responses": [
+        "The chatbot uses Retrieval-Augmented Generation (RAG) to reduce hallucinations and provide accurate answers.",
+        "I search text, PDFs and data first — then answer.",
+        "I try to stay accurate using document-based answers."
+      ]
+    },
+    {
+      "tag": "about_assistant",
+      "patterns": [
+        "Tell me about feedilink", "What is feedilink?", "Who made you?",
+        "What is your name?", "Why were you created?", "What can you do?"
+      ],
+      "responses": [
+        "I am the FEEDILINK assistant — designed to answer using uploaded knowledge.",
+        "I was created to support students and learners.",
+        "Think of me as an AI librarian — I search info and answer 😊"
+      ]
+    },
+    {
+      "tag": "general_questions",
+      "patterns": [
+        "What can you do?", "Can you help me?", "I need information",
+        "Tell me something", "Answer my question", "Help me with PDF",
+        "Retrieve data", "Search something", "Explain topic"
+      ],
+      "responses": [
+        "I answer questions, search PDFs, explain notes and help you study!",
+        "Ask anything — I'm here 😊",
+        "Sure! What do you need?"
+      ]
+    },
+    {
+      "tag": "casual",
+      "patterns": [
+        "ok", "cool", "nice", "great", "awesome", "wow",
+        "thanks", "thank you", "thx", "good job"
+      ],
+      "responses": [
+        "You're welcome 😊",
+        "Glad I could help!",
+        "Anytime!"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye", "Goodbye", "See you", "I'm leaving", "Talk later",
+        "Cya", "Catch you later", "End chat", "Exit"
+      ],
+      "responses": [
+        "Bye — see you soon! 👋",
+        "Take care 😊",
+        "Anytime — I'm here when you return!"
+      ]
+    },
+    {
+      "tag": "frustration",
+      "patterns": [
+        "You are useless", "You are dumb", "Why aren't you answering",
+        "You're wrong", "This is bad", "Shut up", "You don't know anything",
+        "Worst bot"
+      ],
+      "responses": [
+        "I'm here to help — tell me what's wrong 🧑‍🔧",
+        "Sorry if that wasn’t helpful — want to try again?",
+        "Let me try answering better — ask again."
+      ]
+    },
+    {
+      "tag": "motivation",
+      "patterns": [
+        "motivate me", "give motivation", "I'm tired", "I'm sad",
+        "I can't do this", "I feel low", "help me feel better"
+      ],
+      "responses": [
+        "You're stronger than you think — keep going 💪",
+        "Small steps every day lead to big change.",
+        "Believe in yourself — you've got this ✨"
+      ]
+    },
+    {
+      "tag": "jokes",
+      "patterns": [
+        "Tell me a joke", "Say something funny", "Make me laugh",
+        "Joke please"
+      ],
+      "responses": [
+        "Why did the computer go to therapy? — It had too many bytes 😂",
+        "I'm reading a book about anti-gravity — it's impossible to put down 😄"
+      ]
+    },
+    {
+      "tag": "fallback",
+      "patterns": [
+        "*"
+      ],
+      "responses": [
+        "Hmm, I didn’t get that — can you rephrase?",
+        "Try asking differently 😊",
+        "I'm not sure — ask in another way?"
+      ]
+    }
+  ]
+}

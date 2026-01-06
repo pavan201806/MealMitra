@@ -1,0 +1,7 @@
+The RAG Chatbot is a system designed to answer questions based on specific documents.
+It uses FastAPI for the backend and React for the frontend.
+The data folder is located at /backend/data/.
+Users can upload PDF, TXT, and JSON files for indexing.
+The system uses FAISS as a vector database.
+The default greeting is "Hi 👋 I’m your AI Assistant. Ask me anything!".
+If no information is found, it responds with "No relevant information found in my knowledge base."
